@@ -6,13 +6,19 @@ import java.util.List;
 import org.junit.Assert;
 import org.junit.Test;
 
-import interview.data_structures.list.test.util.TestUtil;
+import interview.data_structures.list.test.util.ListTestUtil;
 
-public class SubListTest extends TestUtil {
-    private List<String> myList = initList("a", "b", "c", "d", "e", "f", "g", "h", "i", "g", "k");
+//@RunWith(value = Parameterized.class)
+public class SubListTest extends ListTestUtil {
+
+    public SubListTest(Class<?> cl) {
+        super(cl);
+    }
+
+    private List<String> myList = initList(String.class, "a", "b", "c", "d", "e", "f", "g", "h", "i", "g", "k"); // initList("a", "b", "c", "d", "e", "f", "g", "h", "i", "g", "k");
     private List<String> arrList = new ArrayList<>(
             List.of("a", "b", "c", "d", "e", "f", "g", "h", "i", "g", "k"));
-
+    
     @Test
     public void subListMiddleIntervalTest() {
         Assert.assertEquals(arrList.subList(3, 7), myList.subList(3, 7));

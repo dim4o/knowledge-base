@@ -6,10 +6,14 @@ import java.util.List;
 import org.junit.Assert;
 import org.junit.Test;
 
-import interview.data_structures.list.test.util.TestUtil;
+import interview.data_structures.list.test.util.ListTestUtil;
 
-public class SetTest extends TestUtil {
+public class SetTest extends ListTestUtil {
     
+    public SetTest(Class<?> cl) {
+        super(cl);
+    }
+
     @Test
     public void setAllElementsTest() {
         for (Integer index = 0; index < 10; index++) {

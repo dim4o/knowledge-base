@@ -5,9 +5,14 @@ import java.util.List;
 import org.junit.Assert;
 import org.junit.Test;
 
-import interview.data_structures.list.test.util.TestUtil;
+import interview.data_structures.list.test.util.ListTestUtil;
 
-public class RemoveTest extends TestUtil {
+public class RemoveTest extends ListTestUtil {
+
+    public RemoveTest(Class<?> cl) {
+        super(cl);
+    }
+
     @Test
     public void removeMiddleElementByIndexTest() {
         List<Integer> myList = initList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
@@ -16,7 +21,7 @@ public class RemoveTest extends TestUtil {
         Assert.assertEquals(Integer.valueOf(9), myList.remove(8));
         Assert.assertEquals(expected, myList);
     }
-    
+
     @Test
     public void removeFirstElementByIndexTest() {
         List<Integer> myList = initList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
@@ -25,7 +30,7 @@ public class RemoveTest extends TestUtil {
         Assert.assertEquals(Integer.valueOf(1), myList.remove(0));
         Assert.assertEquals(expected, myList);
     }
-    
+
     @Test
     public void removeLastElementByIndexTest() {
         List<Integer> myList = initList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
@@ -34,18 +39,19 @@ public class RemoveTest extends TestUtil {
         Assert.assertEquals(Integer.valueOf(10), myList.remove(myList.size() - 1));
         Assert.assertEquals(expected, myList);
     }
-    
+
     @Test(expected = IndexOutOfBoundsException.class)
     public void removeFromEmptyTest() {
         List<Integer> myList = initList();
         myList.remove(10);
     }
-    
+
     @Test(expected = IndexOutOfBoundsException.class)
     public void removeByNegativeIndexTest() {
         List<Integer> myList = initList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
         myList.remove(-1);
     }
+
     @Test(expected = IndexOutOfBoundsException.class)
     public void removeByHighTest() {
         List<Integer> myList = initList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);

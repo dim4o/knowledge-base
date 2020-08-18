@@ -7,9 +7,14 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import interview.data_structures.list.test.util.TestUtil;
+import interview.data_structures.list.test.util.ListTestUtil;
 
-public class InsertTest extends TestUtil {
+public class InsertTest extends ListTestUtil {
+
+    public InsertTest(Class<?> cl) {
+        super(cl);
+    }
+
     private List<Integer> myList;
     private List<Integer> arrList;
 
@@ -22,7 +27,7 @@ public class InsertTest extends TestUtil {
     @Test
     public void insertMiddleTest() {
         List<Integer> myList = initList(1, 2, 3, 4, 5, 6, 7, 8, 9);
-        List<Integer> expected = initList(1, 2, 3, 4, 100, 5, 6, 7, 8);
+        List<Integer> expected = initList(1, 2, 3, 4, 100, 5, 6, 7, 8, 9);
         myList.add(4, 100);
 
         Assert.assertEquals(expected, myList);

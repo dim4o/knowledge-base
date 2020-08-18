@@ -6,6 +6,13 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
 
+/**
+ * Implementation of custom ArrayList data structure.
+ * 
+ * @author dimcho.nedev
+ *
+ * @param <T>
+ */
 public class MyArrayList<T> implements List<T> {
     private final String NOT_SUPPORTED_MSG = "Not supported yet.";
 
@@ -104,8 +111,9 @@ public class MyArrayList<T> implements List<T> {
         for (Object obj : c) {
             MyArrayList<Integer> idxsToRemove = new MyArrayList<>();
             for (int i = 0; i < size; i++) {
-                if (obj.equals(arr[i]))
+                if (obj.equals(arr[i])) {
                     idxsToRemove.add(i);
+                }
             }
             int rem = 0;
             for (int i = 0; i < idxsToRemove.size(); i++)
@@ -219,7 +227,6 @@ public class MyArrayList<T> implements List<T> {
      * most correct implementation but satisfies the List interface implementation.
      */
     private class Itr<E> implements Iterator<E> {
-        // TODO: test it, may be have to be -1
         private int currIdx = 0;
 
         @Override
@@ -244,14 +251,26 @@ public class MyArrayList<T> implements List<T> {
     public boolean equals(Object o) {
         if (o == null)
             return false;
-        if (o.getClass() != this.getClass())
+        if (!(o instanceof List))
             return false;
         @SuppressWarnings("unchecked")
-        final MyArrayList<T> l1 = (MyArrayList<T>) o;
-        for (int i = 0; i < size; i++) {
-            if (this.get(i) != l1.get(i))
-                return false;
-        }
+        final List<T> l1 = (List<T>) o;
+        if (l1.size() != size)
+            return false;
+//        
+//        for (int i = 0; i < size; i++) {
+//            if (!get(i).equals(l1.get(i))) {
+//                return false;
+//            }
+//        }
+//        Iterator<T> itr0 = iterator();
+//        Iterator<T> itr1 = l1.iterator();
+//        while (itr0.hasNext()) {
+//            if (!itr0.next().equals(itr1.next())) {
+//                return false;
+//            }
+//        }
+
         return true;
     }
 

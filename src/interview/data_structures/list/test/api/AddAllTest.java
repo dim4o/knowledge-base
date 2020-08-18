@@ -6,9 +6,14 @@ import java.util.List;
 import org.junit.Assert;
 import org.junit.Test;
 
-import interview.data_structures.list.test.util.TestUtil;
+import interview.data_structures.list.test.util.ListTestUtil;
 
-public class AddAllTest extends TestUtil {
+public class AddAllTest extends ListTestUtil {
+
+    public AddAllTest(Class<?> cl) {
+        super(cl);
+    }
+
     private List<Integer> numbersToAdd = List.of(6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16);
     
     @Test

@@ -5,10 +5,14 @@ import java.util.List;
 import org.junit.Assert;
 import org.junit.Test;
 
-import interview.data_structures.list.test.util.TestUtil;
+import interview.data_structures.list.test.util.ListTestUtil;
 
-public class IndexOfTest extends TestUtil {
+public class IndexOfTest extends ListTestUtil {
     
+    public IndexOfTest(Class<?> cl) {
+        super(cl);
+    }
+
     List<Integer> myList = initList(0, 1, 2, 2, 1, 3, 4, 3, 3, 5, 6, 7, 7); 
     
     @Test
