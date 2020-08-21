@@ -1,5 +1,6 @@
 package interview.data_structures.hashtable;
 
+import java.util.AbstractCollection;
 import java.util.AbstractSet;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -88,9 +89,10 @@ public class JHashTable<K, V> implements Map<K, V> {
                 oldValue = pair.setValue(value);
                 break;
             }
-        if (oldValue == null)
+        if (oldValue == null) {
             buckets.get(index).add(new Pair(key, value));
-        size++;
+            size++;
+        }
 
         // resize the HashTable if the size is greater than the load factor
         if ((float) size / capacity >= LOAD_FACTOR) {
@@ -148,11 +150,40 @@ public class JHashTable<K, V> implements Map<K, V> {
 
     @Override
     public Collection<V> values() {
-        Collection<V> values = new LinkedList<>();
-        for (List<Pair> bucket : buckets)
-            for (Pair pair : bucket)
-                values.add(pair.getValue());
+        Collection<V> values = new ValuesView();
         return values;
+    }
+    
+    final class ValuesView extends AbstractCollection<V> {
+        private final Iterator<V> itr;
+
+        ValuesView() {
+            Collection<V> values = new LinkedList<>();
+            for (List<Pair> bucket : buckets)
+                for (Pair pair : bucket)
+                    values.add(pair.getValue());
+            itr = values.iterator();
+        }
+
+        @Override
+        public Iterator<V> iterator() {
+            return new Iterator<V>() {
+                @Override
+                public boolean hasNext() {
+                    return itr.hasNext();
+                }
+
+                @Override
+                public V next() {
+                    return itr.next();
+                }
+            };
+        }
+
+        @Override
+        public int size() {
+            return JHashTable.this.size();
+        }
     }
 
     @Override
@@ -161,11 +192,11 @@ public class JHashTable<K, V> implements Map<K, V> {
     }
 
     /** A {@link Set} view class for the map keys. **/
-    private class SetView extends AbstractSet<K> {
+    final class SetView extends AbstractSet<K> {
         private final Iterator<K> itr;
 
         SetView() {
-            List<K> keys = new LinkedList<>();
+            Collection<K> keys = new LinkedList<>();
             for (List<Pair> bucket : buckets)
                 for (Pair pair : bucket)
                     keys.add(pair.getKey());
@@ -187,7 +218,7 @@ public class JHashTable<K, V> implements Map<K, V> {
 
         @Override
         public int size() {
-            return this.size();
+            return JHashTable.this.size();
         }
     }
 
