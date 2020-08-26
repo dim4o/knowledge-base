@@ -1,4 +1,4 @@
-package kb.design_patterns.bulder;
+package kb.design_patterns.builder;
 
 import java.util.List;
 
