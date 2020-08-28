@@ -25,6 +25,7 @@ Contains my custom implementation of popular data structures.
   - [Bridge](src/kb/design_patterns/bridge/README.md)
   - [Composite](src/kb/design_patterns/composite/README.md)
   - [Decorator](src/kb/design_patterns/decorator/README.md)
+  - [Facade](src/kb/design_patterns/facade/README.md)
 
 - Behavioral patterns
   - [Command](src/kb/design_patterns/command/README.md)

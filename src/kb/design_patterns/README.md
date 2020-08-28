@@ -10,6 +10,7 @@
 - [Bridge](bridge/README.md)
 - [Composite](composite/README.md)
 - [Decorator](decorator/README.md)
+- [Facade](facade/README.md)
 
 ## Behavioral patterns
 - [Command](command/README.md)
