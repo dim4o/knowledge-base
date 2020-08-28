@@ -1,4 +1,4 @@
-package kb.design_patterns.singelton;
+package kb.design_patterns.singleton;
 
 public enum SingeltonEnum {
     // JVM ensures that the instance is loaded lazily + safe initialization

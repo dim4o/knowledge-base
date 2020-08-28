@@ -1,4 +1,4 @@
-package kb.design_patterns.singelton;
+package kb.design_patterns.singleton;
 
 public class Client {
 
