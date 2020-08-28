@@ -1,12 +1,7 @@
 package kb.design_patterns.decorator;
 
-import java.io.BufferedInputStream;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.ObjectInputStream;
 import java.util.List;
-import java.util.zip.GZIPInputStream;
 
 import kb.design_patterns.decorator.notification.EmailNotifierLibrary;
 import kb.design_patterns.decorator.notification.FacebookNotifier;
@@ -29,14 +24,6 @@ public class NotifierApp {
                 new FacebookNotifier(new SlackNotifier(new EmailNotifierLibrary())));
 
         fbAndSmsAndSlack.send("There is a super discount today!", receivers);
-
-        // We need to unserialize those Java objects:
-        ObjectInputStream ois = new ObjectInputStream(
-                new GZIPInputStream(new BufferedInputStream(new FileInputStream("/objects.gz"))));
-
-        // Now we can finally use it:
-        // SomeObject someObject = (SomeObject) ois.readObject();
-
     }
 
 }
