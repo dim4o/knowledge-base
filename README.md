@@ -19,6 +19,7 @@ Contains my custom implementation of popular data structures.
   - [Builder](src/kb/design_patterns/builder/README.md)
   - [Factory Method](src/kb/design_patterns/factory_method/README.md)
   - [Singleton](src/kb/design_patterns/singleton/README.md)
+  - [Prototype](src/kb/design_patterns/prototype/README.md)
 
 - Structural patterns
   - [Adapter](src/kb/design_patterns/adapter/README.md) (Wrapper, or Translator)

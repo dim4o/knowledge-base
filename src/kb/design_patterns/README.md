@@ -4,6 +4,7 @@
 - [Builder](builder/README.md)
 - [Factory Method](factory_method/README.md)
 - [Singleton](singleton/README.md)
+- [Prototype](prototype/README.md)
 
 ## Structural patterns
 - [Adapter](adapter/README.md) (Wrapper, or Translator)
