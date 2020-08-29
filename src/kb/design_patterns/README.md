@@ -1,10 +1,10 @@
 # Design patterns
 
 ## Creational patterns
-- [Builder](builder/README.md)
-- [Factory Method](factory_method/README.md)
-- [Singleton](singleton/README.md)
-- [Prototype](prototype/README.md)
+- [Builder](https://github.com/dim4o/knolige-base/tree/master/src/kb/design_patterns/builder)
+- [Factory Method](https://github.com/dim4o/knolige-base/tree/master/src/kb/design_patterns/factory_method)
+- [Singleton](https://github.com/dim4o/knolige-base/tree/master/src/kb/design_patterns/singleton)
+- [Prototype](https://github.com/dim4o/knolige-base/tree/master/src/kb/design_patterns/prototype)
 
 ## Structural patterns
 - [Adapter](adapter/README.md) (Wrapper, or Translator)
