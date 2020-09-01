@@ -1,21 +1,22 @@
 # Design patterns
 
 ## Creational patterns
-- [Builder](https://github.com/dim4o/knolige-base/tree/master/src/kb/design_patterns/builder)
-- [Factory Method](https://github.com/dim4o/knolige-base/tree/master/src/kb/design_patterns/factory_method)
-- [Singleton](https://github.com/dim4o/knolige-base/tree/master/src/kb/design_patterns/singleton)
-- [Prototype](https://github.com/dim4o/knolige-base/tree/master/src/kb/design_patterns/prototype)
+- [Builder](builder)
+- [Factory Method](factory_method)
+- [Singleton](singleton)
+- [Prototype](prototype)
 
 ## Structural patterns
-- [Adapter](adapter/README.md) (Wrapper, or Translator)
-- [Bridge](bridge/README.md)
-- [Composite](composite/README.md)
-- [Decorator](decorator/README.md)
-- [Facade](facade/README.md)
+- [Adapter](adapter) (Wrapper, or Translator)
+- [Bridge](bridge)
+- [Composite](composite)
+- [Decorator](decorator)
+- [Facade](facade)
+- [Proxy](proxy)
 
 ## Behavioral patterns
-- [Command](command/README.md)
-- [Observer](observer/README.md) (or Publish/Subscribe)
-- [State](state/README.md)
-- [Strategy](strategy/README.md)
-- [Visitor](visitor/README.md)
+- [Command](command)
+- [Observer](observer) (or Publish/Subscribe)
+- [State](state)
+- [Strategy](strategy)
+- [Visitor](visitor)

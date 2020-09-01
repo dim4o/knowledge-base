@@ -1,4 +1,5 @@
 # Knowledge Base
+A lightweight programming knowledge base with examples. Although is `Java` oriented the most of the concepts are language agnostic.
 ## Short content
 1. [Java Concurrency](#java-concurrency)
 2. [Data Structures](#data-structures)
@@ -42,6 +43,7 @@ See the packages [here](/src/kb/design_patterns).
   - [Composite](/src/kb/design_patterns/composite)
   - [Decorator](/src/kb/design_patterns/decorator)
   - [Facade](/src/kb/design_patterns/facade)
+  - [Proxy](/src/kb/design_patterns/proxy)
 - Behavioral patterns
   - [Command](/src/kb/design_patterns/command)
   - [Observer](/src/kb/design_patterns/observer) (or Publish/Subscribe)
