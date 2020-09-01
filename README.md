@@ -5,6 +5,7 @@ A lightweight programming knowledge base with examples. Although is `Java` orien
 2. [Data Structures](#data-structures)
 3. [Design Patterns](#design-patterns)
 4. [Sorting Algorithms](#sorting-algorithms)
+5. [Java Interview Questions](java-interview.md)
 
 ## Java Concurrency
 - **Producer-consumer** - different implementations of the pattern:
