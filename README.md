@@ -8,12 +8,21 @@ A lightweight programming knowledge base with examples. Although is `Java` orien
 5. [Java Interview Questions](java-interview.md)
 
 ## Java Concurrency
-- **Producer-consumer** - different implementations of the pattern:
-  - [Producer-consumer with Lock](src/kb/concurrent/producer_consumer/ProducerConsumerWithLock.java)
-  - [Producer-consumer with Blocking Queue](src/kb/concurrent/producer_consumer/ProducerConsumerWithBlockingQueue.java)
-- **ForkJoin** - some recursive task that are appropriate for ForkJoin computations:
+- **Locks**
+  - `ReentrantLock` [demo](src/kb/concurrent/lock/ReentrantLockDemo.java)
+  - `ReentrantReadWriteLock` [demo](src/kb/concurrent/lock/ReentrantReadWriteLockDemo.java)
+- **Synchronizers**
+  - [Explanations + diagrams](src/kb/concurrent/synchronizers/README.md)
+  - `CountDownLatch` [demo](src/kb/concurrent/synchronizers/CountDownLatchDemo.java)
+  - `CyclicBarrierDemo` [demo](src/kb/concurrent/synchronizers/CyclicBarrierDemo.java)
+  - `SemaphoreDemo` [demo](src/kb/concurrent/synchronizers/SemaphoreDemo.java)
+- **ForkJoin** - some recursive task that are appropriate for ForkJoin computations
   - [Tree printer](src/kb/concurrent/forkjoin/TreePrinter)
   - [Fibonacci](src/kb/concurrent/forkjoin/Fibonacci.java)
+- **Problems** - a collection of some common concurrent problems
+    - [Producer-consumer with Lock](src/kb/concurrent/problems/ProducerConsumerWithLock.java)
+    - [Producer-consumer with Blocking Queue](src/kb/concurrent/problems/ProducerConsumerWithBlockingQueue.java)
+    - [Ensure thread sequence with `join`](src/kb/concurrent/problems/EnsureSequenceWithJoin.java)
 
 ## Data Structures
 See the packages  [here](/src/kb/data_structures).

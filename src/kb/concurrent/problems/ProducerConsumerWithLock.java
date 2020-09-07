@@ -1,4 +1,4 @@
-package kb.concurrent.producer_consumer;
+package kb.concurrent.problems;
 
 import java.util.LinkedList;
 import java.util.Queue;

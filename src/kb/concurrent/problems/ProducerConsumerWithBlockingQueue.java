@@ -1,4 +1,4 @@
-package kb.concurrent.producer_consumer;
+package kb.concurrent.problems;
 
 import java.util.Random;
 import java.util.concurrent.BlockingQueue;

@@ -1,4 +1,4 @@
-package kb.concurrent.producer_consumer;
+package kb.concurrent.problems;
 
 public interface ProducerConsumer {
     public void produce();
