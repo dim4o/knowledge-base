@@ -174,22 +174,63 @@ Source: https://javarevisited.blogspot.com/2014/07/top-50-java-multithreading-in
 ## Phone interview
 Source: https://javarevisited.blogspot.com/2018/07/top-30-java-phone-interview-questions.html
 
-1. Why is String immutable in Java?
+1. Why is String immutable in Java? ([answer](javarevisited.blogspot.sg/2010/10/why-string-is-immutable-in-java.html))
 
 1. Can abstract class have a constructor in Java?
 
-1. Which two methods are overridden by an Object, intended to be used as a key in `HashMap`?
+1. Which two methods are overridden by an Object, intended to be used as a key in `HashMap`? ([answer](https://javarevisited.blogspot.com/2013/08/10-equals-and-hashcode-interview.html))
 
-1. What is the difference between wait and sleep in Java?
+1. What is the difference between wait and sleep in Java? ([answer](https://javarevisited.blogspot.com/2011/12/difference-between-wait-sleep-yield.html))
 
+1. Difference between List and Set in Java? (easy)
 
+1. Difference between List and Set in Java? ([answer](https://javarevisited.blogspot.com/2013/03/how-to-create-immutable-class-object-java-example-tutorial.html))
 
+1. Which data type you should use to represent currency in Java? (easy)
 
+1. When to use abstract class and interface in Java? (easy)
 
+1. Difference between Hashtable and HashMap in Java? (easy)
 
+1. What is the difference between ArrayList and LinkedList in Java? (easy)
 
+1. What is the difference between Overloading and Overriding in Java? *(Compile time vs Runtime polymorphism. See [this](https://javarevisited.blogspot.com/2012/03/what-is-static-and-dynamic-binding-in.html) and [this](https://javarevisited.blogspot.com/2011/12/method-overloading-vs-method-overriding.html))*
 
+1. Difference between checked and unchecked exception in Java?
 
+1. Difference between checked and unchecked exception in Java? ([answer](javarevisited.blogspot.sg/2011/12/checked-vs-unchecked-exception-in-java.html))
+
+1. Does Java array is an instance of Object?
+
+1. Does `List<Number>` can hold Integers? (easy)
+
+1. Can we pass `ArrayList<Number>` to a method which accepts `List<Number>` in Java?
+
+1. Can we pass `ArrayList<Integer>` to a method which accepts `List<Number>`?
+
+1. What is a volatile variable in Java?
+
+1. What is the difference between `CountDownLatch` and `CyclicBarrier` in Java?
+
+1. Does `BlockingQueue` is thread-safe in Java?
+
+1. Why wait and notify method should be called in a loop?
+
+1. What is the difference between `"ABC".equals(unknown string)` and `unknown.equals("ABC")`? (`NullPointerException`)
+
+1. What is a **marker** or **tag** interface in Java? ([answer](https://javarevisited.blogspot.com/2012/01/what-is-marker-interfaces-in-java-and.html))
+
+1. Can `Enum` types implement interface in Java? (Yes)
+
+1. Can `Enum` extend a class in Java?  (No)
+
+1. How to prevent your class from being subclassed? ([answer](https://javarevisited.blogspot.com/2015/04/3-ways-to-prevent-method-overriding-in.html))
+
+1. Can we override a static method in Java? Compilation error? ([answer](https://javarevisited.blogspot.com/2013/03/can-we-overload-and-override-static-method-java.html))
+
+1. Which design pattern have you used recently?
+
+1. What is the difference between `StringBuffer` and `StringBuilder` in Java?
 
 
 ## Generics
@@ -203,15 +244,15 @@ Source: https://javarevisited.blogspot.com/2020/04/50-java-collection-and-generi
 
 1. Write a program to implement LRU cache using Generics ?
 
-1. Can you pass List<String> to a method which accepts List<Object>
+1. Can you pass `List<String>` to a method which accepts `List<Object>`?
 
 1. Can we use Generics with Array?
 
-1. Difference between List<Object> and raw type List in Java?
+1. Difference between `List<Object>` and raw type `List` in Java?
 
-1. Difference between List<?> and List<Object> in Java?
+1. Difference between `List<?>` and `List<Object>` in Java?
 
-1. Difference between List<String> and raw type List?
+1. Difference between `List<String>` and raw type `List`?
 
 1. What is an "unchecked" warning?
 
@@ -225,22 +266,25 @@ Source: https://javarevisited.blogspot.com/2020/04/50-java-collection-and-generi
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 ## Frequently Asked Questions
 Source: https://www.java67.com/2014/07/21-frequently-asked-java-interview-questions-answers.html
 
-## My Questions
+## Other Core Java Questions
+
 1. What are the types of Java Threads? ([See](https://www.geeksforgeeks.org/daemon-thread-java/))
+
 1. What is a class loader?
+
 1. What is volatile "happens-before" relationship - *"A happens-before relationship is a guarantee that memory written to by statement A is visible to statement B, that is, that statement A completes its write before statement B starts its read."*
+
+ 1. Why multiple inheritance is not supported in Java? ([answer](https://javarevisited.blogspot.com/2011/07/why-multiple-inheritances-are-not.html))
+
+ 1. Does Java Pass by Value or Pass by Reference? ([answer](https://javarevisited.blogspot.com/2012/12/does-java-pass-by-value-or-pass-by-reference.html))
+
+ 1. Can You Run Java Program Without a Main Method? ([answer](https://www.java67.com/2014/02/can-you-run-java-program-without-main-method.html))
+
+ 1. Why main method is public static and void in Java? ([answer](https://www.java67.com/2012/08/what-is-main-method-in-java-why-main-is.html))
+
+ 1. Why character array is better than String for Storing password in Java? (See [this](https://javarevisited.blogspot.com/2012/03/why-character-array-is-better-than.html) and [this](https://www.geeksforgeeks.org/use-char-array-string-storing-passwords-java/) answer)
+
+ 1. Why Default or No Argument Constructor is Important in Java Class? ([answer](https://javarevisited.blogspot.com/2014/01/why-default-or-no-argument-constructor-java-class.html))
