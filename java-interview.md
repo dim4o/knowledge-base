@@ -5,8 +5,7 @@
 - [Phone interview](#phone-interview)
 - [Generics](#generics)
 - [Frequently Asked Questions](#Frequently-Asked-Questions);
-- Exceptions
-- My Questions
+- [Other Core Java Questions](#Other-Core-Java-Questions)
 - Top 10 Tricky Java interview questions and Answers ([link](https://www.java67.com/2012/09/top-10-tricky-java-interview-questions-answers.html))
 
 
@@ -158,8 +157,6 @@ Source: https://javarevisited.blogspot.com/2014/07/top-50-java-multithreading-in
 
 1. What happens if a thread throws an Exception inside synchronized block?
 
-1. What happens if a thread throws an Exception inside synchronized block?
-
 1. How to create thread-safe Singleton in Java?
 
 1. List down 3 multi-threading best practice you follow?
@@ -288,3 +285,17 @@ Source: https://www.java67.com/2014/07/21-frequently-asked-java-interview-questi
  1. Why character array is better than String for Storing password in Java? (See [this](https://javarevisited.blogspot.com/2012/03/why-character-array-is-better-than.html) and [this](https://www.geeksforgeeks.org/use-char-array-string-storing-passwords-java/) answer)
 
  1. Why Default or No Argument Constructor is Important in Java Class? ([answer](https://javarevisited.blogspot.com/2014/01/why-default-or-no-argument-constructor-java-class.html))
+
+ 1. Can we have a static & final method? (Yes)
+
+ 1. Can we have an abstract & final method? (No)
+
+ 1. What are the implications of declaring a constructor private?
+
+ 1. Can there be a private/constructor in an abstract class? ([see](https://stackoverflow.com/questions/11625635/private-constructor-in-abstract-class))
+
+ 1. `new String(“str”);` how many objects will be created? ([see](https://stackoverflow.com/questions/1881922/questions-about-javas-string-pool))
+
+ 1. Can a constructor be final? (No, [see](https://www.tutorialspoint.com/Can-a-constructor-be-made-final-in-Java))
+
+ 1. How to sort values in `HashMap`? ([answer](https://www.java67.com/2015/01/how-to-sort-hashmap-in-java-based-on.html))
