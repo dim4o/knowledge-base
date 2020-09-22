@@ -2,6 +2,7 @@
 - [CountDownLatch](#CountDownLatch)
 - [CyclicBarrier](#CyclicBarrier)
 - [Semaphore](#Semaphore)
+- [Thread Local](ThreadLocalDemo.java)
 
 ## CountDownLatch
 In this case we have three services running on separate threads. Each service have to do some heavy initialization on it's `run()` method (e.g. connect to DB, retrieving some information). With `CountDownLatch` we can await until all the services are initialized. See the [code example](CountDownLatchDemo.java).

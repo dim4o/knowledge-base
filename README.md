@@ -16,6 +16,7 @@ A lightweight programming knowledge base with examples. Although is `Java` orien
   - `CountDownLatch` [demo](src/kb/concurrent/synchronizers/CountDownLatchDemo.java)
   - `CyclicBarrierDemo` [demo](src/kb/concurrent/synchronizers/CyclicBarrierDemo.java)
   - `SemaphoreDemo` [demo](src/kb/concurrent/synchronizers/SemaphoreDemo.java)
+  - `ThreadLocalDemo` [demo](src/kb/concurrent/synchronizers/ThreadLocalDemo.java)
 - **ForkJoin** - some recursive task that are appropriate for ForkJoin computations
   - [Tree printer](src/kb/concurrent/forkjoin/TreePrinter)
   - [Fibonacci](src/kb/concurrent/forkjoin/Fibonacci.java)
