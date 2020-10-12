@@ -72,8 +72,8 @@ class ShoppingCartVisitor implements CartVisitor {
     }
 
     @Override
-    public double visit(Book ithem) {
-        return ithem.getPrice();
+    public double visit(Book item) {
+        return item.getPrice();
     }
 }
 
