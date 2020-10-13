@@ -3,14 +3,21 @@ package kb.data_structures.tree;
 import java.util.ArrayList;
 import java.util.List;
 
-// TODO:
 /**
- * Supports the following operations: - {@link #insert(V)} - {@link #search(V)}
+ * A classical implementation of BST. Supports the following operations: 
+ * - {@link #insert(V)} 
+ * - {@link #search(V)}
  * - {@link #delete(V)}
+ * - {@link #rangeView(V, V)}
+ * - {@link #postorderView()}
+ * - {@link #postorderView()}
+ * - {@link #inorderView()}
+ * - {@link #isEmpty()}
+ * - {@link #toString()}
+ * 
+ * @param <V>
  * 
  * @author dimcho.nedev
- *
- * @param <V>
  */
 public class BinarySearchTree<V extends Comparable<V>> {
     private TreeNode root = null;
@@ -122,7 +129,7 @@ public class BinarySearchTree<V extends Comparable<V>> {
      * @param to   high bound
      * @return sorted {@link List}
      */
-    private List<V> getRangeView(V from, V to) {
+    private List<V> rangeView(V from, V to) {
         List<V> view = new ArrayList<>();
         calcRange(root, from, to, view);
         return view;
@@ -139,7 +146,7 @@ public class BinarySearchTree<V extends Comparable<V>> {
     }
 
     /**
-     * Creates an inorder view of the BST
+     * Creates an inorder view of the BST.
      * 
      * @return a {@link List} with inorder view
      */
@@ -196,45 +203,13 @@ public class BinarySearchTree<V extends Comparable<V>> {
     }
 
     public boolean isEmpty() {
-        return root != null;
+        return root == null;
     }
 
     @Override
     public String toString() {
+        // The default representation is the inorder view
         return inorderView().toString();
-    }
-
-    public static void main(String[] args) {
-        System.out.println("a".compareTo("b"));
-        BinarySearchTree<Integer> bst = new BinarySearchTree<>();
-//        bst.insert(1);
-//        bst.insert(1);
-//        bst.insert(2);
-//        bst.insert(3);
-//        System.out.println(bst.inorderView());
-//        System.out.println(bst.preorderView());
-//        System.out.println(bst.postorderView());
-//        
-//        System.out.println(bst.search(1));
-//        System.out.println(bst.search(0));
-//        System.out.println(bst.search(2));
-//        System.out.println(bst.search(3));
-//        System.out.println(bst.search(4));
-//        System.out.println(bst.search(-1));
-        for (Integer i : List.of(3, 2, 4, 1, 5, 8, 9, 7, 6)) {
-            bst.insert(i);
-        }
-
-        System.out.println(bst.inorderView());
-
-        System.out.println(bst.getRangeView(4, 8));
-        System.out.println(bst.getRangeView(4, 4));
-
-        System.out.println(bst.getRangeView(5, 1));
-
-        bst.delete(3);
-        System.out.println(bst);
-        bst.calcRange(bst.new TreeNode(1), 1, 1, new ArrayList<>());
     }
 
 }
