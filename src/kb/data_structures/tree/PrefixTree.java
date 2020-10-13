@@ -8,12 +8,12 @@ import java.util.Map;
  * @author dimcho.nedev
  */
 public class PrefixTree {
-    final class Node {
+    private final class Node {
         final Map<Character, Node> map = new HashMap<>();
         boolean isEnd = false;
     }
 
-    final Node root;
+    private final Node root;
 
     public PrefixTree() {
         this.root = new Node();
