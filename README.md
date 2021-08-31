@@ -18,7 +18,7 @@ A lightweight programming knowledge base with examples. Although is `Java` orien
   - `SemaphoreDemo` [demo](src/kb/concurrent/synchronizers/SemaphoreDemo.java)
   - `ThreadLocalDemo` [demo](src/kb/concurrent/synchronizers/ThreadLocalDemo.java)
 - **ForkJoin** - some recursive task that are appropriate for ForkJoin computations
-  - [Tree printer](src/kb/concurrent/forkjoin/TreePrinter)
+  - [Tree printer](src/kb/concurrent/forkjoin/TreePrinter.java)
   - [Fibonacci](src/kb/concurrent/forkjoin/Fibonacci.java)
 - **Problems** - a collection of some common concurrent problems
     - [Producer-consumer with Lock](src/kb/concurrent/problems/ProducerConsumerWithLock.java)
